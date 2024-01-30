@@ -4,23 +4,31 @@
   <meta charset="UTF-8" />
   <title>Stoppeklokke</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-
+  
 </head>
 <body>
   <div>
     <div id="frame">
-      <p><span id="minutes">00</span>:
-        <span id="seconds">00</span>:
-        <span id="tens">00</span></p>
-
-      <button id="start">Start</button>
-      <button id="stopp">Stopp</button>
-      <button id="reset">Tilbakestill</button>
-      
+      <p><span><span id="minutes">00</span>:
+         <span id="seconds">00</span>:
+         <span id="tens">00</span></span><br><br></p>
+      <p>
+        <span id="lap">Rundetider: </span></br>
    
+      </p>
+
+      <button id="startBtn" onclick="startBtn()">Start</button>
+      <button id="stopBtn" onclick="stopBtn()">Stopp</button>
+      <button id="resetBtn" onclick="resetBtn()">Tilbakestill</button>
+      <button id="lapBtn" onclick="lapBtn()">Rundetid</button>
+      
+      
+  
       
     </div>
   </div>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
