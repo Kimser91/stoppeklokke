@@ -23,16 +23,14 @@ function resetBtn() {
 }
 
 function lapBtn(){
-  
   roundTime.innerHTML += 
   `<li><span>${minutes}</span>:
-  <span>${seconds}</span>:
-  <span>${tens}</span>
-  </li>`;
-                          
-
+   <span>${seconds}</span>:
+   <span>${tens}</span></li>`;
   clearInterval(interval);
- 
+  tens = "00";
+  seconds = "00";
+  minutes = "00";
   appendTens.innerHTML = tens;
   appendSeconds.innerHTML = seconds;
   appendMinutes.innerHTML = minutes;
